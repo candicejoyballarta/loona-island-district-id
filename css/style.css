@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@font-face {
+  font-family: "Serial Regular";
+  src: url("/fonts/SerialRegular.otf");
+}
+@font-face {
+  font-family: "Market Deco";
+  src: url("/fonts/Market_Deco.ttf");
+}
+@font-face {
+  font-family: "Athena";
+  src: url("/fonts/Athena-Regular.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #ee0d94;
+  --bottom-color: #f89fd4;
+  --text-color: #ee0d94;
+  --barcode-color: #ee0d94;
+  --logo-color: #ffe7e7;
+  --loona-card: url("/assets/card-overlay.png");
+  background-color: #f8f8f8;
+  text-transform: uppercase;
+  font-family: "Market Deco", sans-serif;
+}
+body.version-hyunjin {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #dfb921;
+  --bottom-color: #f6e4a7;
+  --text-color: #dfb921;
+  --barcode-color: #dfb921;
+  --logo-color: #f5edd4;
+  --loona-card: url("/assets/card-overlay.png");
+}
+body.version-haseul {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #01a850;
+  --bottom-color: #b7ecd1;
+  --text-color: #01a850;
+  --barcode-color: #01a850;
+  --logo-color: #d8f5e6;
+  --loona-card: url("/assets/card-overlay.png");
+}
+body.version-yeojin {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #fd771e;
+  --bottom-color: #f2d3be;
+  --text-color: #fd771e;
+  --barcode-color: #fd771e;
+  --logo-color: #f8ebe2;
+  --loona-card: url("/assets/card-overlay.png");
+}
+body.version-vivi {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #fa8da3;
+  --bottom-color: #f4bfda;
+  --text-color: #fa8da3;
+  --barcode-color: #fa8da3;
+  --logo-color: #f7d9e9;
+  --loona-card: url("/assets/card-overlay.png");
+}
+body.version-kimlip {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #f4183c;
+  --bottom-color: #faa1b0;
+  --text-color: #f4183c;
+  --barcode-color: #f4183c;
+  --logo-color: #f5bfc8;
+  --loona-card: url("/assets/card-overlay.png");
+}
+body.version-jinsoul {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #1b23a8;
+  --bottom-color: #9fa4eb;
+  --text-color: #1b23a8;
+  --barcode-color: #1b23a8;
+  --logo-color: #c2c6f3;
+  --loona-card: url("/assets/card-overlay.png");
+}
+body.version-choerry {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #6d2ba7;
+  --bottom-color: #d5a7fe;
+  --text-color: #6d2ba7;
+  --barcode-color: #6d2ba7;
+  --logo-color: #e4cbfa;
+  --loona-card: url("/assets/card-overlay.png");
+}
+body.version-yves {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #64001c;
+  --bottom-color: #da7e98;
+  --text-color: #64001c;
+  --barcode-color: #64001c;
+  --logo-color: #e4a1b4;
+  --loona-card: url("/assets/card-overlay.png");
+}
+body.version-chuu {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #ff8a6a;
+  --bottom-color: #f9baa9;
+  --text-color: #ff8a6a;
+  --barcode-color: #ff8a6a;
+  --logo-color: #f7d4cb;
+  --loona-card: url("/assets/card-overlay.png");
+}
+body.version-gowon {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #40cbac;
+  --bottom-color: #a9dfd3;
+  --text-color: #40cbac;
+  --barcode-color: #40cbac;
+  --logo-color: #ccf8ef;
+  --loona-card: url("/assets/card-overlay.png");
+}
+body.version-hyeju {
+  --main-font: "Serial Regular", sans-serif;
+  --font-size: 25px;
+  --top-color: #5c606c;
+  --bottom-color: #a0a8c2;
+  --text-color: #5c606c;
+  --barcode-color: #5c606c;
+  --logo-color: #e2eafa;
+  --loona-card: url("/assets/card-overlay.png");
+}
+body.version-loona {
+  --main-font: "Athena", sans-serif;
+  --font-size: 25px;
+  --top-color: #050505;
+  --bottom-color: #f7f7f7;
+  --text-color: #050505;
+  --barcode-color: #050505;
+  --logo-color: #f7f7f7;
+  --loona-card: url("/assets/loona-front.png");
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  font-size: var(--font-size);
+}
+
+.hide {
+  opacity: 0;
+}
+
+.made-by {
+  font-family: "Poppins", sans-serif;
+  text-transform: lowercase;
+}
+.made-by a {
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #da7e98;
+  color: #050505;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.made-by a:hover {
+  box-shadow: inset 150px 0 0 0 #da7e98;
+  color: white;
+}
+
+.card-container {
+  perspective: 1500px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 640px;
+  height: 400px;
+  transform-style: preserve-3d;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.05), 0px 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.8s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.card.flip {
+  transform: rotateY(-180deg);
+}
+.card__front, .card__back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.card__back {
+  z-index: 99;
+  min-width: 640px;
+  border-radius: 20px;
+  transform: rotateY(180deg);
+  background-color: var(--bottom-color);
+}
+
+.left {
+  float: left;
+  width: 60px;
+  height: 400px;
+  padding: 10px;
+  background-color: var(--top-color);
+  color: white;
+  font-size: 30px;
+  border-radius: 0px 20px 20px 0px;
+  writing-mode: vertical-rl;
+  padding-top: 30px;
+  padding-right: 12px;
+  transform: rotate(-180deg);
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Market Deco", sans-serif;
+}
+.left :nth-child(2) {
+  margin-left: 24px;
+}
+.left :nth-child(3) {
+  justify-self: right;
+}
+
+.right {
+  float: relative;
+  width: 580px;
+  height: 400px;
+  padding-left: 32px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 52px;
+  background: var(--loona-card);
+  border-radius: 0px 20px 20px 0px;
+  background-color: var(--bottom-color);
+}
+
+/*-- INPUT ELEMENTS -----*/
+.main-image {
+  margin-left: 12px;
+  border: 4px solid var(--top-color);
+  background: var(--bottom-color);
+  width: 204px;
+  height: 260px;
+}
+
+.your-face {
+  display: block;
+  background: var(--logo-color);
+  cursor: pointer;
+  position: relative;
+  max-height: 300px;
+  overflow: hidden;
+  height: 100%;
+}
+.your-face #imager {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10;
+  position: relative;
+  visibility: hidden;
+}
+.your-face .image-persuader {
+  font-size: 20px;
+  font-family: var(--main-font);
+  position: absolute;
+  color: var(--top-color);
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.your-face .input-file {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  bottom: 2px;
+  transform: translateX(-50%);
+  padding: 8px;
+  z-index: 11;
+  background: white;
+}
+.your-face .input-file:not(:focus-visible) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+}
+.your-face .input-file:not(:focus) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+}
+.your-face .input-file:focus-visible {
+  outline: 2px solid #313437;
+  outline-offset: -4px;
+}
+
+.form {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.form .main-image {
+  justify-content: right;
+  align-items: right;
+}
+.form label span {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-color);
+  margin-bottom: -4px;
+}
+.form input {
+  font-size: var(--font-size);
+  line-height: var(--font-size);
+  font-family: var(--main-font);
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  display: block;
+  color: #313437;
+  height: 32px;
+  overflow: visible;
+  width: 200px;
+}
+.form input:focus {
+  outline: none;
+}
+.form input:focus::placeholder {
+  opacity: 0;
+}
+.form input::placeholder {
+  color: #313437;
+  transition: opacity 0.2s ease;
+}
+.form input::placeholder.hide {
+  opacity: 0;
+}
+.form .color-code {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.form .color-code input[type=text] {
+  width: 90px;
+}
+.form .color-code input[type=color] {
+  -webkit-appearance: none;
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+}
+.form .color-code input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.form .color-code input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 4px;
+}
+.form .color-code input[type=color]:focus-visible::-webkit-color-swatch {
+  outline: 2px solid #313437;
+  outline-offset: 2px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.loona-logo-bg {
+  position: absolute;
+  padding-left: -32px;
+  z-index: 1;
+  padding-left: 60px;
+  content: url("/assets/card-overlay.png");
+}
+
+.barcode {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+.barcode path {
+  fill: var(--barcode-color);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 100px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.radio-group label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 24px;
+}
+.radio-group label input[type=radio] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  outline-offset: 4px;
+}
+.radio-group label .circle {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+.radio-group label .text::after {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 1px;
+  color: transparent;
+  overflow: hidden;
+  visibility: hidden;
+  padding-bottom: 2px;
+}
+.radio-group label input[type=radio]:checked ~ span.version-heejin {
+  background-color: #ee0d94;
+}
+.radio-group label input[type=radio]:checked ~ span.version-hyunjin {
+  background-color: #dfb921;
+}
+.radio-group label input[type=radio]:checked ~ span.version-haseul {
+  background-color: #01a850;
+}
+.radio-group label input[type=radio]:checked ~ span.version-yeojin {
+  background-color: #fd771e;
+}
+.radio-group label input[type=radio]:checked ~ span.version-vivi {
+  background-color: #fa8da3;
+}
+.radio-group label input[type=radio]:checked ~ span.version-kimlip {
+  background-color: #f4183c;
+}
+.radio-group label input[type=radio]:checked ~ span.version-jinsoul {
+  background-color: #1b23a8;
+}
+.radio-group label input[type=radio]:checked ~ span.version-choerry {
+  background-color: #6d2ba7;
+}
+.radio-group label input[type=radio]:checked ~ span.version-yves {
+  background-color: #64001c;
+}
+.radio-group label input[type=radio]:checked ~ span.version-chuu {
+  background-color: #ff8a6a;
+}
+.radio-group label input[type=radio]:checked ~ span.version-gowon {
+  background-color: #40cbac;
+}
+.radio-group label input[type=radio]:checked ~ span.version-hyeju {
+  background-color: #5c606c;
+}
+.radio-group label input[type=radio]:checked ~ span.version-loona {
+  background-image: linear-gradient(45deg, #dc3b3e, #3b99dc 50%, #3bdc90 75%, rgb(255, 141, 0) 100%);
+}
+.radio-group label input[type=radio]:checked ~ .text {
+  font-weight: bold;
+}
+.radio-group label input[type=radio]:focus-visible ~ span.circle {
+  outline: 2px solid #313437;
+  outline-offset: 2px;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  align-self: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn:focus-visible {
+  outline: 2px solid #313437;
+  outline-offset: 2px;
+}
+.btn--primary {
+  color: white;
+  background-color: #313437;
+}
+.btn--primary:hover, .btn--primary:focus {
+  background-color: #0f0e0e;
+}
+.btn--secondary {
+  background-color: transparent;
+}
+.btn--secondary:hover, .btn--secondary:focus {
+  background-color: #e5e5e5;
+}
+
+@media only screen and (max-width: 670px) {
+  .scale {
+    transform: scale(0.55);
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .scale {
+    transform: scale(0.45);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

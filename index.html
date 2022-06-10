@@ -1,0 +1,475 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Loona Island District ID Generator</title>
+		<link rel="shortcut icon" href="/assets/favicon.png" />
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="scale">
+				<div class="card-container">
+					<div class="card" id="districtCard">
+						<div class="card__front" id="cardFront">
+							<div class="left">
+								<p aria-label="Loona Island">LOONA ISLAND</p>
+							</div>
+							<div class="right">
+								<div class="main-image">
+									<label for="image-input"></label>
+									<label
+										class="your-face"
+										id="image-form"
+										for="image-input"
+									>
+										<img
+											id="imager"
+											src="/assets/sample-picture.jpg"
+											alt="Your Image Here"
+										/>
+										<input
+											type="file"
+											id="image-input"
+											class="input-file"
+											accept=".jpg, .jpeg, .png"
+										/>
+										<p class="image-persuader">
+											SELECT PHOTO
+										</p>
+									</label>
+								</div>
+								<div class="form">
+									<label for="name"
+										><span>NAME</span>
+										<input
+											type="text"
+											name="name"
+											id="name"
+											placeholder="YOUR NAME"
+										/>
+									</label>
+									<label for="district"
+										><span>DISTRICT</span>
+										<input
+											type="text"
+											name="district"
+											id="district"
+											placeholder="DISTRICT 1"
+										/>
+									</label>
+									<label for="regDate"
+										><span>REG DATE</span>
+										<input
+											type="text"
+											name="regDate"
+											id="regDate"
+											class="regDate"
+											placeholder="YYYY-MM-DD"
+										/>
+									</label>
+									<label for="name"
+										><span>MEMBERSHIP TYPE</span>
+										<input
+											type="text"
+											name="name"
+											id="name"
+											placeholder="RESIDENT"
+										/>
+									</label>
+								</div>
+
+								<svg
+									class="barcode"
+									width="44"
+									height="260"
+									viewBox="0 0 44 260"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path d="M0 0H44V2H0V0Z" fill="#F96493" />
+									<path
+										d="M0 5.99998H44V7.99998H0V5.99998Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 18H44V20H0V18Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 24H44V26H0V24Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 30H44V38H0V30Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 44H44V46H0V44Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 50H44V54H0V50Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 60H44V64H0V60Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 70H44V72H0V70Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 76H44V84H0V76Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 88H44V90H0V88Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 95.9999H44V104H0V95.9999Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 106H44V114H0V106Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 120H44V122H0V120Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 126H44V128H0V126Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 132H44V134H0V132Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 138H44V140H0V138Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 146H44V154H0V146Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 156H44V158H0V156Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 164H44V172H0V164Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 176H44V178H0V176Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 186H44V188H0V186Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 194H44V198H0V194Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 202H44V204H0V202Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 214H44V222H0V214Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 226H44V228H0V226Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 244H44V248H0V244Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 252H44V254H0V252Z"
+										fill="#F96493"
+									/>
+									<path
+										d="M0 258H44V260H0V258Z"
+										fill="#F96493"
+									/>
+								</svg>
+							</div>
+						</div>
+						<div class="card__back" id="cardBack">
+							<img
+								src="/assets/loona-card-back.png"
+								alt="back"
+								id="cardBackImg"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="buttons">
+				<div class="radio-group">
+					<div class="row">
+						<label for="version-heejin" class="radio">
+							<input
+								type="radio"
+								id="version-heejin"
+								name="color"
+								value="version-heejin"
+								checked
+							/>
+							<p
+								class="text"
+								title="heejin"
+								aria-label="District 1"
+							>
+								🐰 Heejin
+							</p>
+							<span class="circle version-heejin"></span>
+						</label>
+
+						<label for="version-hyunjin" class="radio">
+							<input
+								type="radio"
+								id="version-hyunjin"
+								name="color"
+								value="version-hyunjin"
+							/>
+							<p
+								class="text"
+								title="hyunjin"
+								aria-label="District 2"
+							>
+								🐱 Hyunjin
+							</p>
+							<span class="circle version-hyunjin"></span>
+						</label>
+						<label for="version-haseul" class="radio">
+							<input
+								type="radio"
+								id="version-haseul"
+								name="color"
+								value="version-haseul"
+							/>
+							<p
+								class="text"
+								title="haseul"
+								aria-label="District 3"
+							>
+								🕊 Haseul
+							</p>
+							<span class="circle version-haseul"></span>
+						</label>
+
+						<label for="version-yeojin" class="radio">
+							<input
+								type="radio"
+								id="version-yeojin"
+								name="color"
+								value="version-yeojin"
+							/>
+							<p
+								class="text"
+								title="yeojin"
+								aria-label="District 4"
+							>
+								🐸 Yeojin
+							</p>
+							<span class="circle version-yeojin"></span>
+						</label>
+					</div>
+					<div class="row">
+						<label for="version-vivi" class="radio">
+							<input
+								type="radio"
+								id="version-vivi"
+								name="color"
+								value="version-vivi"
+							/>
+							<p
+								class="text"
+								title="vivi"
+								aria-label="District 5"
+							>
+								🦌 Vivi
+							</p>
+							<span class="circle version-vivi"></span>
+						</label>
+
+						<label for="version-kimlip" class="radio">
+							<input
+								type="radio"
+								id="version-kimlip"
+								name="color"
+								value="version-kimlip"
+							/>
+							<p
+								class="text"
+								title="kimlip"
+								aria-label="District 6"
+							>
+								🦉 Kim Lip
+							</p>
+							<span class="circle version-kimlip"></span>
+						</label>
+						<label for="version-jinsoul" class="radio">
+							<input
+								type="radio"
+								id="version-jinsoul"
+								name="color"
+								value="version-jinsoul"
+							/>
+							<p
+								class="text"
+								title="jinsoul"
+								aria-label="District 7"
+							>
+								🐟 Jinsoul
+							</p>
+							<span class="circle version-jinsoul"></span>
+						</label>
+
+						<label for="version-choerry" class="radio">
+							<input
+								type="radio"
+								id="version-choerry"
+								name="color"
+								value="version-choerry"
+							/>
+							<p
+								class="text"
+								title="choerry"
+								aria-label="District 8"
+							>
+								🦇 Choerry
+							</p>
+							<span class="circle version-choerry"></span>
+						</label>
+					</div>
+					<div class="row">
+						<label for="version-yves" class="radio">
+							<input
+								type="radio"
+								id="version-yves"
+								name="color"
+								value="version-yves"
+							/>
+							<p
+								class="text"
+								title="viviyves"
+								aria-label="District 9"
+							>
+								🦢 yves
+							</p>
+							<span class="circle version-yves"></span>
+						</label>
+
+						<label for="version-chuu" class="radio">
+							<input
+								type="radio"
+								id="version-chuu"
+								name="color"
+								value="version-chuu"
+							/>
+							<p
+								class="text"
+								title="chuu"
+								aria-label="District 10"
+							>
+								🐧 Chuu
+							</p>
+							<span class="circle version-chuu"></span>
+						</label>
+						<label for="version-gowon" class="radio">
+							<input
+								type="radio"
+								id="version-gowon"
+								name="color"
+								value="version-gowon"
+							/>
+							<p
+								class="text"
+								title="gowon"
+								aria-label="District 11"
+							>
+								🦋 Gowon
+							</p>
+							<span class="circle version-gowon"></span>
+						</label>
+
+						<label for="version-hyeju" class="radio">
+							<input
+								type="radio"
+								id="version-hyeju"
+								name="color"
+								value="version-hyeju"
+							/>
+							<p
+								class="text"
+								title="hyeju"
+								aria-label="District 12"
+							>
+								🐺 Olivia Hye
+							</p>
+							<span class="circle version-hyeju"></span>
+						</label>
+					</div>
+					<div class="row">
+						<label for="version-loona" class="radio">
+							<input
+								type="radio"
+								id="version-loona"
+								name="color"
+								value="version-loona"
+							/>
+							<p class="text" title="loona" aria-label="All Pass">
+								🌙 Loona
+							</p>
+							<span class="circle version-loona"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="buttons">
+				<div>
+					<button
+						class="btn btn--secondary"
+						onclick="flipCard()"
+						id="btnFlip"
+					>
+						Flip Card
+					</button>
+					<button
+						onclick="downloadCard()"
+						id="btnDownload"
+						class="btn btn--primary"
+						data-splitbee-event="Download Card"
+					>
+						Download Card
+					</button>
+				</div>
+			</div>
+			<div class="made-by">
+				<p>
+					Made by:
+					<a href="https://twitter.com/yvesmotions" target="_blank"
+						>@yvesmotions 🍎</a
+					>
+				</p>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+		<script src="/main.js"></script>
+	</body>
+</html>
