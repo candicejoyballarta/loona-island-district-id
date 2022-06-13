@@ -7,7 +7,8 @@
 
 #### 🎨 Design
 
-Logos used are based on the original assets, respective to original copyright holders. Fonts used: [Poppins](https://fonts.google.com/specimen/Poppins), [Serial Regular](https://www.fonts.com/font/typeheist/serial/regular), [Market Deco](https://www.dafont.com/market-deco.font), and [Athena](https://www.dafont.com/athena.font)
+-   Logos used are based on the original assets, respective to original copyright holders. Fonts used: [Poppins](https://fonts.google.com/specimen/Poppins), [Serial Regular](https://www.fonts.com/font/typeheist/serial/regular), [Market Deco](https://www.dafont.com/market-deco.font), and [Athena](https://www.dafont.com/athena.font) 
+-   [Figma Design](https://www.figma.com/file/uHeKSUlC7Po3pXhVyQ9Cos/LOONA-ISLAND-District-ID?node-id=0%3A1)
 
 #### 🔒 Credit
 
